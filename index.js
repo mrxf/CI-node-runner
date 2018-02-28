@@ -9,7 +9,7 @@ function entry() {
     })
 
     /** 
-     * 安装依赖
+     * install node modules
      */
     function installModule() {
         if(!isInstalledNodeModules) {
@@ -24,7 +24,7 @@ function entry() {
     }
 
     /**
-     * 执行参数中的命令
+     * exec the commands
      */
     function fnExecCommands() {
         argv._.forEach(v => {

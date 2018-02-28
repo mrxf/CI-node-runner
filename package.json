@@ -1,6 +1,6 @@
 {
   "name": "scurexec",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Secure exec node command",
   "main": "index.js",
   "bin": {
@@ -14,7 +14,9 @@
     "url": "git+https://github.com/mrxf/CI-node-runner.git"
   },
   "keywords": [
-    "CI"
+    "scure",
+    "exec",
+    "command"
   ],
   "author": "mrxf <zhshydev@gmail.com> (http://www.thisjs.com/)",
   "license": "MIT",
