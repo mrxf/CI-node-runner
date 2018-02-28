@@ -1,6 +1,6 @@
 {
   "name": "scurexec",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Secure exec node command",
   "main": "index.js",
   "bin": {
