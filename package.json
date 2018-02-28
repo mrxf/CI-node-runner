@@ -1,5 +1,5 @@
 {
-  "name": "ci-node-runner",
+  "name": "scurexec",
   "version": "0.0.1",
   "description": "Secure exec node command",
   "main": "index.js",

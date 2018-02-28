@@ -1,2 +1,2 @@
-# CI-node-runner
-Secure exec node command
+# Secure exec node command
+
