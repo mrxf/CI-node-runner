@@ -1,0 +1,28 @@
+{
+  "name": "ci-node-runner",
+  "version": "0.0.1",
+  "description": "Secure exec node command",
+  "main": "index.js",
+  "bin": {
+    "scurexec": "bin/scurexec.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrxf/CI-node-runner.git"
+  },
+  "keywords": [
+    "CI"
+  ],
+  "author": "mrxf <zhshydev@gmail.com> (http://www.thisjs.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrxf/CI-node-runner/issues"
+  },
+  "homepage": "https://github.com/mrxf/CI-node-runner#readme",
+  "dependencies": {
+    "yargs": "^11.0.0"
+  }
+}
