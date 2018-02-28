@@ -30,6 +30,7 @@ function entry() {
         argv._.forEach(v => {
             exec(v, (err, stdout, stderr) => {
                 if(err) return console.log(err);
+                console.log(stdout);
             });
         })
     }
