@@ -17,3 +17,8 @@ Once you're installed, you can execution node command safty anywhere. It will au
 ```
 scurexec node index.js
 ```
+
+## Todo
+
+* yarn support
+* better terminal outputs
