@@ -1,10 +1,13 @@
-const argv = require('yargs').argv;
 const exec = require('child_process').exec;
+const maxBuffer = 1024 * 5000;
 function entry() {
-    let isInstalledNodeModules = false;
+    let isInstalledNodeModules = true;
 
-    exec("npm ls --json", function(err, stdout, stderr) {
-        if (err) return installModule()
+    exec("npm ls --json",{maxBuffer: maxBuffer}, function(err, stdout, stderr) {
+        if (err) {
+            isInstalledNodeModules = false;
+            return installModule();
+        }
         fnExecCommands();
     })
 
@@ -27,12 +30,12 @@ function entry() {
      * exec the commands
      */
     function fnExecCommands() {
-        argv._.forEach(v => {
-            exec(v, (err, stdout, stderr) => {
-                if(err) return console.log(err);
-                console.log(stdout);
-            });
-        })
+        const userArgv = process.argv.slice(2);
+        const userCommand = userArgv.join(" ");
+        exec(userCommand, (err, stdout, stderr) => {
+            if(err) return console.log(err);
+            console.log(stdout);
+        });
     }
 }
 module.exports = entry;

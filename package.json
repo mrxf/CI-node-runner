@@ -1,6 +1,6 @@
 {
   "name": "scurexec",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Secure exec node command",
   "main": "index.js",
   "bin": {
@@ -24,7 +24,5 @@
     "url": "https://github.com/mrxf/scure-exec/issues"
   },
   "homepage": "https://github.com/mrxf/scure-exec#readme",
-  "dependencies": {
-    "yargs": "^11.0.0"
-  }
+  "dependencies": {}
 }
